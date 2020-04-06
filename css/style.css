@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body, html {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden; }
+
+.cover-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 380px; }
+  .cover-row div div {
+    height: 215px;
+    width: 215px;
+    margin: 0 20px;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-color: red; }
+    .cover-row div div:after {
+      content: "";
+      display: block;
+      height: 200px;
+      width: 200px;
+      margin-top: 55px;
+      z-index: -1;
+      filter: blur(25px) saturate(2); }
+
+.cover-one {
+  background-image: url(../img/columbiana.jpeg); }
+  .cover-one:after {
+    background-image: url(../img/columbiana.jpeg); }
+
+.cover-two {
+  background-image: url(../img/moneyhoneydrip.png); }
+  .cover-two:after {
+    background-image: url(../img/moneyhoneydrip.png); }
+
+.cover-three {
+  background-image: url(../img/diggiduwaist.png); }
+  .cover-three:after {
+    background-image: url(../img/diggiduwaist.png);
+    transform: rotate(270deg); }
+
+.cover-four {
+  background-image: url(../img/you.png); }
+  .cover-four:after {
+    background-image: url(../img/you.png); }
+
+.cover-five {
+  background-image: url(../img/dystopia.jpeg); }
+  .cover-five:after {
+    background-image: url(../img/dystopia.jpeg); }
+
+.title-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Inter';
+  margin-top: -50px; }
+  .title-wrapper h1 {
+    font-size: 30px;
+    color: #0A1F3A;
+    font-weight: 800;
+    margin-bottom: 5px;
+    letter-spacing: 0.5px; }
+  .title-wrapper h2 {
+    font-size: 16px;
+    color: #A5A5A5;
+    font-weight: 500; }
+
+.controls-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 95px; }
+  .controls-wrapper svg {
+    transition: opacity 0.1s ease; }
+    .controls-wrapper svg:active {
+      opacity: 0.5; }
+
+.play-btn-wrapper {
+  height: 65px;
+  width: 65px;
+  background-color: #0A1F3A;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 15px 41px 0 rgba(10, 31, 58, 0.53);
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
+
+.play-icon {
+  border: 0;
+  background: transparent;
+  width: 0;
+  height: 19px;
+  outline: 0;
+  border-color: transparent transparent transparent #FFF;
+  transition: 100ms all ease;
+  cursor: pointer;
+  border-style: solid;
+  border-width: 10px 0 10px 16px; }
+
+.paused {
+  border-style: double;
+  border-width: 0 0 0 15px; }
+
+.backward-btn {
+  transform: rotate(180deg); }
+
+.options-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 50px;
+  margin-bottom: 45px; }
+  .options-wrapper div {
+    cursor: pointer; }
